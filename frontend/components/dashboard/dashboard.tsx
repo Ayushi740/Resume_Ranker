@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button"
 import { Spinner } from "@/components/ui/spinner"
 import { FileText, Users, TrendingUp } from "lucide-react"
 
-const API_BASE = "http://127.0.0.1:5000"
+const API_BASE = "https://resume-backend-yvst.onrender.com"
 
 export function Dashboard() {
   const [activeItem, setActiveItem] = useState("dashboard")
