@@ -25,3 +25,12 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Flask Resume Screener (Python)
+
+Standalone Python service in `flask-resume-screener/`.
+
+- Stack: Flask, Flask-SQLAlchemy (SQLite at `flask-resume-screener/app.db`), Werkzeug auth, PyPDF2, scikit-learn TF-IDF + cosine similarity.
+- Run via workflow `Flask Resume API` (`python flask-resume-screener/app.py`, port 5000).
+- Endpoints: `/api/signup`, `/api/login`, `/api/logout`, `/api/me`, `POST/GET /api/resumes`, `DELETE /api/resumes/<id>`, `POST /api/rank`.
+- Uploads stored under `flask-resume-screener/uploads/<user_id>/`.
